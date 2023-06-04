@@ -1,0 +1,26 @@
+&__login-menu{
+    &-button{
+        background-color: transparent;
+        border: none;
+        color: var(--dark-gray);
+        cursor: pointer;
+    }
+}
+
+&__auth{
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--terciary-background-color);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    min-width: 130px;
+    a{
+        color: var(--main-background-color);
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}

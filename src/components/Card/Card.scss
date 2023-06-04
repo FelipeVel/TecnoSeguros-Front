@@ -1,0 +1,48 @@
+.card {
+  background-color: var(--dark-gray);
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  &__horizontal {
+    display: flex;
+    flex-direction: row;
+    .card__image {
+      &__first {
+        margin-right: 2rem;
+      }
+      &__last {
+        margin-left: 2rem;
+      }
+    }
+  }
+  &__vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    &__last {
+      order: 2;
+    }
+    &__first {
+      order: 1;
+    }
+    img {
+      position: relative;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  &__content {
+    order: 1;
+  }
+}

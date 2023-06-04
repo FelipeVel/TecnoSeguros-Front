@@ -1,0 +1,39 @@
+.header {
+  position: sticky;
+  z-index: 2;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 1rem;
+  height: 1.5rem;
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.24);
+  a {
+    color: white;
+    text-decoration: none;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+  &__logo {
+    img{
+        position: absolute;
+        height: 90%;
+        top: 0;
+    }
+  }
+  &__navbar {
+    display: flex;
+    align-items: center;
+    a {
+      margin: 1rem;
+      transition: font 0.1s ease-in-out;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+  @import "children/LoginMenu/LoginMenu.scss";
+}

@@ -1,0 +1,11 @@
+.home {
+  background-color: var(--dark-gray);
+  &__content{
+    .card{
+      img{
+        max-height: 250px;
+        margin: auto;
+      }
+    }
+  }
+}
