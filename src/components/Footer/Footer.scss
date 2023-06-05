@@ -15,6 +15,7 @@
     &__column {
       display: flex;
       flex-direction: column;
+      min-width: 13rem;
       &__title{
         margin: 1rem 0;
       }
@@ -24,6 +25,10 @@
       a {
         color: white;
         text-decoration: none;
+        min-width: 18rem;
+        &:hover {
+          font-weight: bold;
+        }
       }
       ul{
         margin: 0;

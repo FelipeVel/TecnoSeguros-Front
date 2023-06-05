@@ -31,6 +31,12 @@ const Footer = (props) => {
                 <li>
                     <a href="/about">Sobre Nosotros</a>
                 </li>
+                <li>
+                    <a href="/insurance">Catálogo de seguros</a>
+                </li>
+                <li>
+                    <a href="/packages">Paquetes</a>
+                </li>
             </ul>
           </div>
         </div>

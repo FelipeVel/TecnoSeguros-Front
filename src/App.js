@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Landing from './pages/Landing/Landing';
 import Seguros from './pages/Seguros/Seguros';
+import Packages from './pages/Packages/Packages';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/" element={<Landing/>}/>
           <Route path="/insurance" element={<Seguros/>}/>
+          <Route path="/packages" element={<Packages/>}/>
           {/* <Route path="/login" element={<Login/>}/>
           <Route path="/register" element={<Register/>}/> */}
         </Routes>

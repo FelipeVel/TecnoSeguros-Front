@@ -26,7 +26,7 @@ const Card = (props) => {
   const cardButton = button ? (
     <div className="card__button">
       <a href={link}>
-        <button href={link} onClick={() => onClickHandler ? onClickHandler(props.insurance) : ""}>{button}</button>
+        <button href={link} onClick={() => onClickHandler ? onClickHandler(props.value) : ""}>{button}</button>
       </a>
     </div>
   ) : (

@@ -11,8 +11,7 @@ const Header = (props) => {
       <div className="header__navbar">
         <a href="/">Inicio</a>
         <a href="/insurance">Seguros</a>
-        <a href="/pack">Paquetes</a>
-        <a href="/contact">Contacto</a>
+        <a href="/packages">Paquetes</a>
       </div>
       <LoginMenu />
     </header>

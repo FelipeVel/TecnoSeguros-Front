@@ -121,7 +121,7 @@ const Seguros = () => {
               description="Cotiza tu seguro de vehículos con nosotros y obtén los mejores beneficios."
               button="Ver más"
               onClickHandler={clickHandler}
-              insurance="vehiculos"
+              value="vehiculos"
             />
             <Card
               image={Vida}
@@ -130,7 +130,7 @@ const Seguros = () => {
               description="Cotiza tu seguro de vida con nosotros y obtén los mejores beneficios."
               button="Ver más"
               onClickHandler={clickHandler}
-              insurance="vida"
+              value="vida"
             />
             <Card
               image={Viaje}
@@ -139,7 +139,7 @@ const Seguros = () => {
               description="Cotiza tu seguro de viaje con nosotros y obtén los mejores beneficios."
               button="Ver más"
               onClickHandler={clickHandler}
-              insurance="viaje"
+              value="viaje"
             />
           </div>
         </div>
