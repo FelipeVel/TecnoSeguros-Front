@@ -30,8 +30,6 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="Seguro todo riesgo"
             description="Cubre los daños ocasionados a tu vehículo por accidentes de tránsito, fenómenos naturales, vandalismo, entre otros."
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
           <Card
@@ -39,10 +37,11 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="SOAT"
             description="Cubre los daños ocasionados a terceros en accidentes de tránsito."
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
+          <a href="/cotizar" className="SegurosPage-Insurance-Block-Content-Button">
+            <button>Cotizar</button>
+          </a>
         </div>
       </div>
     ),
@@ -57,8 +56,6 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="Seguro de vida a término"
             description="Proporciona cobertura de seguro de vida por un período de tiempo específico"
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
           <Card
@@ -66,10 +63,11 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="Seguro de vida entera"
             description="Proporciona cobertura de seguro de vida por toda la vida del asegurado"
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
+          <a href="/cotizar" className="SegurosPage-Insurance-Block-Content-Button">
+            <button>Cotizar</button>
+          </a>
           </div>
       </div>
     ),
@@ -84,8 +82,6 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="Seguro de equipaje"
             description="Cubre la pérdida, robo o daño de tu equipaje y pertenencias personales durante el viaje"
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
           <Card
@@ -93,8 +89,6 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="Seguro de cancelación"
             description="Cubre los gastos de cancelación de viaje por causas de fuerza mayor"
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
           <Card
@@ -102,10 +96,11 @@ const Seguros = () => {
             className="SegurosPage-Insurance-Block-Content-Card"
             title="Seguro médico de viaje"
             description="Cubre los gastos médicos de emergencia durante el viaje"
-            button="Cotizar"
-            link="/cotizar"
             orientation="horizontal"
           />
+          <a href="/cotizar" className="SegurosPage-Insurance-Block-Content-Button">
+            <button>Cotizar</button>
+          </a>
         </div>
       </div>
     )
@@ -132,7 +127,7 @@ const Seguros = () => {
               image={Vida}
               className="SegurosPage-Landing-Info-Card"
               title="Seguro de vida"
-              description="Cotiza tu seguro de vidas con nosotros y obtén los mejores beneficios."
+              description="Cotiza tu seguro de vida con nosotros y obtén los mejores beneficios."
               button="Ver más"
               onClickHandler={clickHandler}
               insurance="vida"

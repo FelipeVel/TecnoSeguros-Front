@@ -87,6 +87,19 @@
             }
           }
         }
+        &-Button {
+          button {
+            width: 100%;
+            background-color: var(--main-background-color);
+            border: none;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+            padding: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+        }
       }
     }
   }
