@@ -9,7 +9,6 @@ const Header = (props) => {
         <img src={Logotipo} alt="TecnoSeguros"/>
       </a>
       <div className="header__navbar">
-        <a href="/">Inicio</a>
         <a href="/insurance">Seguros</a>
         <a href="/packages">Paquetes</a>
       </div>

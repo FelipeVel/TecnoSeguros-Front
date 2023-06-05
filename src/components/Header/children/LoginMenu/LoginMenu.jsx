@@ -6,11 +6,11 @@ const LoginMenu = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuButtons = (
     <div className="header__auth">
-        <a href="#login">
+        <a href="/login">
             <FontAwesomeIcon icon={faRightToBracket} />
             Iniciar sesión
         </a>
-        <a href="#register">
+        <a href="/register">
             <FontAwesomeIcon icon={faAddressCard} />
             Registrarse
         </a>

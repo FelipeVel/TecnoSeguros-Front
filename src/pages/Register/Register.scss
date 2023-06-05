@@ -1,0 +1,105 @@
+.RegisterPage {
+  width: 100%;
+  height: 85vh;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(https://www.amaitlp.org/wp-content/uploads/2020/08/faro-e1598896492289.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 85%;
+    opacity: 0.4;
+  }
+  &-Container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    width: 60%;
+  }
+  &-Login {
+    margin-right: 4rem;
+    &-Title {
+      text-align: end;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--main-background-color);
+    }
+    &-Subtitle {
+      text-align: end;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      a {
+        color: var(--main-background-color);
+        text-decoration: none;
+      }
+    }
+  }
+  &-Register {
+    position: relative;
+    border-radius: 10px;
+    &::before {
+      content: "";
+      background-color: var(--secondary-background-color);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      opacity: 0.7;
+    }
+    &-Form {
+        padding: 1rem;
+      &-Title {
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--main-background-color);
+      }
+      &-Content{
+        position: relative;
+        margin-top: 2rem;
+        label {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+        input{
+            background-color: var(--secondary-background-color);
+            border-radius: 10px;
+            border: var(--main-background-color) 1px solid;
+            color: white;
+            padding: .5rem 1rem;
+        }
+        &-Input{
+            display: flex;
+            margin-bottom: 1rem;
+            justify-content: space-between;
+            &-List{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-Item{
+                    display: flex;
+                }
+            }
+        }
+        &-Submit{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            button{
+                width: 50%;
+                height: 2rem;
+                border: none;
+                border-radius: 10px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+      }
+    }
+  }
+}

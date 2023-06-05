@@ -8,6 +8,24 @@ body{
   background-color: var(--secondary-background-color);
   color: var(--terciary-background-color);
 
+  button {
+    cursor: pointer;
+    background-color: var(--main-background-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    &:hover {
+      background-color: white;
+      color: var(--main-background-color);
+    }
+  }
+
+  *::selection{
+    background-color: var(--main-background-color);
+    color: var(--terciary-background-color);
+  }
+
 }
 .App{
   //Estilos de páginas
