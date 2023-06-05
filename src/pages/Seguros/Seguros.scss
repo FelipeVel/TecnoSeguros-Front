@@ -1,0 +1,122 @@
+.SegurosPage {
+  &-Landing {
+    min-height: 90vh;
+    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../resources/images/Seguros.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 90%;
+      opacity: 0.4;
+    }
+    &-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--secondary-background-color);
+      width: 50%;
+      border-radius: 10px;
+      top: 10rem;
+      left: 25%;
+      padding: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+    &-Title {
+      color: var(--main-background-color);
+      margin: 2rem auto;
+      width: fit-content;
+      h1 {
+        margin: 0;
+      }
+    }
+    &-Info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 100%;
+      &-Card {
+        max-width: 30%;
+        justify-content: center;
+        .card {
+          &__title {
+            font-size: 1.5rem;
+            margin: auto;
+            display: flex;
+          }
+          &__button {
+            width: fit-content;
+            margin: auto;
+          }
+        }
+        img {
+          max-height: 4rem;
+          margin: auto;
+        }
+      }
+    }
+  }
+  &-Insurance {
+    &-Block {
+      -webkit-animation: scale-up-ver-top 0.4s
+        cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      animation: scale-up-ver-top 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+      padding: 2rem;
+      &-Title {
+        margin: 0 auto;
+        color: var(--main-background-color);
+        width: fit-content;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      &-Content {
+        width: 70%;
+        margin: 2rem auto;
+        &-Card {
+          justify-content: unset;
+          .card {
+            &__image {
+              width: fit-content;
+              margin-right: 3rem;
+              img {
+                max-height: 10rem;
+                max-width: 10rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes scale-up-ver-top {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}

@@ -1,10 +1,15 @@
-.App{
-  --main-background-color: #44749d;
-  --secondary-background-color: #c6d4e1;
+body{
+  --main-background-color: #EF4B4B;
+  --secondary-background-color: #353539;
   --terciary-background-color: #ffffff;
   --light-gray:#ebe7e0;
   --dark-gray:#bdb8ad;
 
+  background-color: var(--secondary-background-color);
+  color: var(--terciary-background-color);
+
+}
+.App{
   //Estilos de páginas
   .page{
     &__content{
@@ -23,7 +28,6 @@
     &-slide{
       text-align: center;
       font-size: 18px;
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -50,6 +54,7 @@
       width: 100%;
       padding: 0;
       max-height: unset;
+      border:none;
       &__image{
         width: 100%;
         margin: 0;

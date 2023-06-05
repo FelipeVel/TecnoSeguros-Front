@@ -1,0 +1,38 @@
+.LandingPage{
+    &-container{
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            height: 100vh;
+        }
+    }
+    &-Info{
+        &-Card{
+            position : absolute;
+            width: 25%;
+            background-color: var(--secondary-background-color);
+            z-index: 1;
+            left: 10rem;
+            top: 30rem;
+            border-radius: 10px;
+            opacity: 0.8;
+            .card{
+                &__title{
+                    font-size: 2rem;
+                    margin: auto;
+                }
+                &__button{
+                    position: relative;
+                    button{
+                        position: absolute;
+                        right: 0;
+                        top: 20px;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

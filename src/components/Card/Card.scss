@@ -1,5 +1,4 @@
 .card {
-  background-color: var(--dark-gray);
   position: relative;
   align-items: center;
   justify-content: space-between;
@@ -44,5 +43,20 @@
   }
   &__content {
     order: 1;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--main-background-color);
+  }
+  &__button button{
+    background-color: var(--main-background-color);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: .5rem;
+    border-radius: 5px;
   }
 }

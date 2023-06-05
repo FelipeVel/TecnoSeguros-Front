@@ -4,21 +4,21 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import Card from "../../components/Card/Card";
 import Banner1 from "../../resources/images/Banner1.jpeg";
 import Banner2 from "../../resources/images/Banner2.jpeg";
-import Lupa from "../../resources/images/lupa.png";
-import Telefono from "../../resources/images/telefono.png";
+import Buscar from "../../resources/images/buscar.png";
+import AcercaDe from "../../resources/images/acerca-de.png";
 import Elegir from "../../resources/images/por-que-elegir.png";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/scss/navigation";
-import "./Home.scss";
+import "./About.scss";
 
-const Home = (props) => {
+const About = (props) => {
   const progressCircle = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
   };
 
-  const HomeCarrousel = (
+  const AboutCarrousel = (
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
@@ -52,9 +52,9 @@ const Home = (props) => {
     </Swiper>
   );
   return (
-    <div className="home">
-      <div className="home__carousel">{HomeCarrousel}</div>
-      <div className="home__content page__content">
+    <div className="about">
+      {/* <div className="about__carousel">{AboutCarrousel}</div> */}
+      <div className="about__content page__content">
         <Card
           title="¿Qué es TecnoSeguros?"
           description={
@@ -77,7 +77,7 @@ const Home = (props) => {
               </p>
             </div>
           }
-          image={Telefono}
+          image={AcercaDe}
           imagePosition="last"
           orientation="horizontal"
         />
@@ -103,7 +103,7 @@ const Home = (props) => {
               </p>
             </div>
           }
-          image={Lupa}
+          image={Buscar}
           imagePosition="first"
           orientation="horizontal"
         />
@@ -130,4 +130,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default About;
